@@ -2,13 +2,11 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-gem 'pg'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
-gem 'sqlite3'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -16,6 +14,7 @@ group :development, :test do
   gem 'spork-rails', github: 'sporkrb/spork-rails'
   gem 'guard-spork'
   gem 'childprocess'
+  gem 'sqlite3'
 end
 
 group :test do
@@ -52,6 +51,7 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
 
 # Use ActiveModel has_secure_password
